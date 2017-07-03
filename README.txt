@@ -1,0 +1,1 @@
+To run the program open the Connect4.csproj

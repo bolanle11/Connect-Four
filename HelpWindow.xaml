@@ -1,0 +1,23 @@
+﻿<Window x:Class="Connect4.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Connect4"
+        mc:Ignorable="d"
+        Title="Connect 4" Height="350" Width="525" ResizeMode="NoResize" Icon="images/disc_red.png">
+    <Window.Background>
+        <ImageBrush ImageSource="images/gradient_bg.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="384,268,0,0" VerticalAlignment="Top" Width="111" Height="28" FontFamily="Source Sans Pro Semibold" Background="#FF50696E" Foreground="White" Cursor="Hand" FontSize="14" Click="BackButton_Click" BorderBrush="White">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="17" Direction="462" Opacity="0.74" ShadowDepth="0"/>
+            </Button.Effect>
+        </Button>
+
+
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="19,23,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="273" Width="347" Foreground="White" FontFamily="Source Sans Pro Light"><Run FontSize="24" FontFamily="Segoe WP Semibold" Text="Instructions "/><LineBreak/><Run FontWeight="Bold" FontSize="14" FontFamily="Source Sans Pro Semibold" Text="How to play "/><LineBreak/><Run FontSize="14" Text="1. A random player starts the game each time"/><LineBreak/><Run FontSize="14" Text="2. On your turn, click on one of the column to drop down a disc."/><LineBreak/><Run FontSize="14" Text="3. Play alternates until one player gets FOUR checkers of his or her color in a row. The four in a row can be horizontal, vertical or diagonal."/><LineBreak/><Run/><LineBreak/><Run FontWeight="Bold" FontFamily="Source Sans Pro Semibold" Text=" "/><Run FontWeight="Bold" FontSize="14" FontFamily="Source Sans Pro Semibold" Text="How to Win "/><LineBreak/><Run FontSize="14" Text="If you're the first player to get four of your checkers in a row, you win the game!"/><LineBreak/></TextBlock>
+
+    </Grid>
+</Window>
